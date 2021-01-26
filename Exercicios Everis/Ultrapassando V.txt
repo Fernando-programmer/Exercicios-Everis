@@ -1,0 +1,16 @@
+let R = parseInt(gets());
+let V = parseInt(gets());
+let total = 0
+let num = []
+while (V <= R){
+  V = parseInt(gets())
+  // console.log(V)
+}
+total = R;
+num.push(total)
+for (let i = 1; total <= V; i++){
+  let valor = R + i
+  num.push(valor)
+  total += valor
+}
+console.log(num.length)

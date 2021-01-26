@@ -1,0 +1,44 @@
+let L;
+let Vi = [];
+let maior = 0;
+let i = 1;
+let c = 0;
+
+while (c < 3){
+  L = gets(i)
+  // console.log(L)
+  if (1 <= L && L <= 500){
+    i+= 1
+    // console.log(i)
+    Vi = gets(i).split(' ')
+    // console.log(Vi)
+    
+    for(let r = 0; r < Vi.length; r++){
+      // console.log(r)
+      if(parseInt(Vi[r]) >= 1 && parseInt(Vi[r]) <= 50){
+        if(maior < parseInt(Vi[r])){
+            maior = parseInt(Vi[r])
+        }
+      }
+     
+    }
+    
+    // console.log(maior)
+    if (maior < 10){
+        console.log('1')
+    }
+    else if(10 <= maior && maior < 20){
+        console.log('2')
+    }
+    else{
+        console.log('3')
+    }
+    
+    
+    maior = 0
+    }
+  
+  i+= 1;
+  // console.log(i)
+  c++;
+}

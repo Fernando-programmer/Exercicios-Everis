@@ -1,0 +1,9 @@
+let [ H, P ] = gets().split(" ");
+
+if(1<=H && P <= 1000){
+  const H = parseInt(gets());
+  const P = parseInt(gets());
+}
+  
+let media = parseFloat((H/P)).toFixed(2);
+console.log(media);

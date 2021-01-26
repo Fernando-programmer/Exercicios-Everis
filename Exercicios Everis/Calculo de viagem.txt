@@ -1,0 +1,7 @@
+let [ T, V ] = gets().split(" ");
+let DISTANCIA = (T*V);
+let RUBENS = 12;
+let gasolina = parseFloat(DISTANCIA/RUBENS).toFixed(3);
+  
+
+console.log(gasolina);

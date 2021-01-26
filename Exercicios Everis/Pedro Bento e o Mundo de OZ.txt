@@ -1,0 +1,16 @@
+let joia = gets();
+var tesouro = [];
+let soma = 0
+
+
+while(soma < 106){
+  tesouro.push(joia);
+  joia = gets();
+  // console.log(tesouro)
+  soma += tesouro.length;
+}
+ 
+const distinto = [... new Set(tesouro)]
+distinto.pop(' ')
+// console.log(distinto)
+console.log(distinto.length)

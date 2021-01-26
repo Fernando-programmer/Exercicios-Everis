@@ -1,0 +1,5 @@
+let dados = parseInt(gets());
+let velocidade = ""
+
+velocidade = (2*dados);
+console.log(`${velocidade} minutos`);

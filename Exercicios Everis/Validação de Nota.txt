@@ -1,0 +1,21 @@
+let nota1 = parseFloat(gets());
+let nota2 = parseFloat(gets());
+let media = '';
+
+while(media == ''){
+  if(nota1 >= 0 && nota1 <= 10){
+      if(nota2 >= 0 && nota2 <= 10){
+        media = (nota1 + nota2)/2;
+        console.log(`media = ${media}`)
+      }
+      else{
+        console.log('nota invalida')
+        nota1 = parseFloat(gets());
+      }
+  }
+  else{
+    console.log('nota invalida')
+    nota1 = parseFloat(gets());
+    
+  }
+}

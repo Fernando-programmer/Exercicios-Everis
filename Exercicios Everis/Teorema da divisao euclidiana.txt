@@ -1,0 +1,17 @@
+let [a, b] = gets().split(" ");
+// console.log(a, b);
+
+if(-1000 <= a && b < 1000){
+  let q = parseInt(a/b);
+  let r = parseInt(a%b);
+  
+  if(r < 0){
+    r = (r + Math.abs(b));
+    // console.log(r);
+    q = (a - r)/b;
+    console.log(q, r);
+  }
+  else{
+    console.log(q, r);
+  }
+}
